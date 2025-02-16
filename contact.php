@@ -1,4 +1,4 @@
-<?php 
+<?php
+require "functions.php";
 $heading = 'Contact';
 require "views/contact.view.php";
-require "function.php";
