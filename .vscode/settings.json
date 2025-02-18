@@ -8,5 +8,6 @@
     "**/Thumbs.db": true,
     "README.md": true,
     ".vscode": true
-  }
+  },
+  "hide-files.files": []
 }
