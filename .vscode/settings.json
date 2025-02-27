@@ -9,5 +9,9 @@
     "README.md": true,
     ".vscode": true
   },
-  "hide-files.files": []
+  "hide-files.files": [],
+  "editor.fontSize": 20,
+  "[php]": {
+    "editor.fontFamily": "'Fira Code'"
+  }
 }
