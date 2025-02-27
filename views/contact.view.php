@@ -1,6 +1,6 @@
-<?php require('partials/head.php'); ?>
-<?php require('partials/nav.php'); ?>
-<?php require('partials/banner.php'); ?>
+<?php require 'partials/head.php'; ?>
+<?php require 'partials/nav.php'; ?>
+<?php require 'partials/banner.php'; ?>
 
 
 <main>
@@ -8,4 +8,4 @@
     <p>Hello, Welcome to contact page</p>
   </div>
 </main>
-<?php require('partials/footer.php'); ?>
+<?php require 'partials/footer.php'; ?>
