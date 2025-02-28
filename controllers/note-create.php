@@ -1,6 +1,12 @@
 <?php
-$config = require('config.php');
+
+
+require 'Validator.php';
+
+
+$config = require 'config.php';
 $db = new Database($config['database']);
+
 
 $heading = 'Create note';
 
@@ -8,13 +14,10 @@ $heading = 'Create note';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
 
+ 
 
-    if (strlen($_POST['body']) === 0) {
-        $errors['body'] = 'A body is required';
-    }
-
-    if (strlen($_POST['body']) > 1000) {
-        $errors['body'] = 'The description can\'t be more than 1000 characters';
+    if (! Validator::string($_POST['body'],1,1000)) {
+        $errors['body'] = 'A body of no more than 1000 characters is required';
     }
 
 
@@ -26,5 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]);
     }
 }
+
 
 require 'views/note-create.view.php';
