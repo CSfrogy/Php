@@ -32,7 +32,7 @@ class Database
 
     public function find()
     {
-        return $this->statement->fetchAll();
+        return $this->statement->fetch();
     }
 
     public function findOrFail()
