@@ -3,7 +3,7 @@
 <?php require base_path ('views/partials/banner.php'); ?>
 <main>
   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <form method="post">
+    <form method="POST" action="/notes">
       <div class="space-y-6">
         <div>
           <label for="body" class="block text-sm font-medium text-gray-900">Description</label>
