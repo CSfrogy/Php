@@ -1,5 +1,6 @@
 <?php
-use
+
+$_SESSION['name'] = 'Jeffrey';
 
 view("index.view.php", 
 [
