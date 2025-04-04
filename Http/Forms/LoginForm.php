@@ -10,7 +10,7 @@ class LoginForm
 
     public function validate($email, $password)
     {
-  
+
         if (!Validator::email($email)) {
             $this->errors['email'] = 'Please provide a valid email address.';
         }
@@ -22,7 +22,13 @@ class LoginForm
         return empty($errors);
     }
 
-    public function errors(){
+    public function errors()
+    {
         return $this->errors;
+    }
+
+    public function error($field, $message)
+    {
+        $this->errors[$field] = $message;
     }
 }
