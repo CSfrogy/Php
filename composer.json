@@ -1,0 +1,16 @@
+{
+    "name": "user/php",
+    "authors": [
+        {
+            "name": "CSfrogy",
+            "email": "134266389+CSfrogy@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Core/"
+        }
+    }
+}
