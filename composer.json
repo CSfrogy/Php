@@ -6,11 +6,22 @@
             "email": "134266389+CSfrogy@users.noreply.github.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/collections": "^12.8"
+    },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
-            "Http\\": "Core/"
+            "Http\\": "Core/",
+            "Tests\\":"tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     }
 }
