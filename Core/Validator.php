@@ -1,5 +1,7 @@
 <?php
+
 namespace Core;
+
 class Validator
 {
     public static function string($value, $min = 1, $max = INF)
@@ -10,8 +12,13 @@ class Validator
         return strlen($value) >= $min && strlen($value) <= $max;
     }
 
-    public static function email($value)
+    public static function email(string $value): bool
     {
-        return filter_var($value, FILTER_VALIDATE_EMAIL);
+        return (bool) filter_var($value, FILTER_VALIDATE_EMAIL);
+    }
+
+    public static function greaterThan(int $value, int $greaterThan): bool
+    {
+        return $value > $greaterThan;
     }
 }
